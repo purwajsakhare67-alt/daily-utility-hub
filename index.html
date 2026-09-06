@@ -194,17 +194,17 @@
             <span class="text-gray-200 font-medium tracking-wide">Zero Remote Uploads • 100% Local Execution</span>
           </div>
 
-          <div class="flex items-center gap-1.5 bg-[#0B1528]/90 p-1 rounded-xl border border-[#C87D55]/20">
-            <button onclick="switchTab('about')" class="px-2.5 py-1.5 rounded-lg text-xs font-medium text-gray-300 hover:text-[#F2D5C4] hover:bg-[#C87D55]/15 transition flex items-center gap-1.5">
-              <i data-lucide="info" class="w-3.5 h-3.5 text-[#DA8A5E]"></i>
+          <div class="flex items-center gap-2">
+            <button onclick="switchTab('about')" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-[#1E293B] to-[#0F172A] hover:from-[#334155] hover:to-[#1E293B] border border-[#C87D55]/30 hover:border-[#C87D55]/60 text-gray-300 hover:text-white shadow-md transition-all duration-300 flex items-center gap-1.5 group">
+              <i data-lucide="info" class="w-4 h-4 text-[#DA8A5E] group-hover:text-white transition-colors"></i>
               <span class="hidden md:inline">About Us</span>
             </button>
-            <button onclick="switchTab('privacy')" class="px-2.5 py-1.5 rounded-lg text-xs font-medium text-gray-300 hover:text-[#F2D5C4] hover:bg-[#C87D55]/15 transition flex items-center gap-1.5">
-              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#DA8A5E]"></i>
+            <button onclick="switchTab('privacy')" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-[#1E293B] to-[#0F172A] hover:from-[#334155] hover:to-[#1E293B] border border-[#C87D55]/30 hover:border-[#C87D55]/60 text-gray-300 hover:text-white shadow-md transition-all duration-300 flex items-center gap-1.5 group">
+              <i data-lucide="shield-check" class="w-4 h-4 text-[#DA8A5E] group-hover:text-white transition-colors"></i>
               <span class="hidden md:inline">Privacy Policy</span>
             </button>
-            <button onclick="switchTab('contact')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-[#C87D55] to-[#B86B3E] text-white shadow-md shadow-[#C87D55]/20 hover:brightness-110 transition flex items-center gap-1.5">
-              <i data-lucide="mail" class="w-3.5 h-3.5 text-white"></i>
+            <button onclick="switchTab('contact')" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-[#C87D55] to-[#B86B3E] hover:from-[#DA8A5E] hover:to-[#C87D55] text-white shadow-lg shadow-[#C87D55]/30 hover:shadow-[#C87D55]/50 border border-[#F2D5C4]/30 hover:brightness-110 transition-all duration-300 flex items-center gap-1.5 transform hover:-translate-y-0.5">
+              <i data-lucide="mail" class="w-4 h-4 text-white"></i>
               <span>Contact Us</span>
             </button>
           </div>
@@ -3447,11 +3447,27 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
         <!-- Column 3: Company & Legal (2 cols) -->
         <div class="lg:col-span-2 space-y-3">
           <h4 class="text-xs font-bold text-white uppercase tracking-wider">Company & Legal</h4>
-          <ul class="space-y-2 text-xs text-gray-400">
-            <li><button onclick="switchTab('about')" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5"><i data-lucide="info" class="w-3.5 h-3.5 text-[#DA8A5E]"></i><span>About Us</span></button></li>
-            <li><button onclick="switchTab('privacy')" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#DA8A5E]"></i><span>Privacy Policy</span></button></li>
-            <li><button onclick="switchTab('terms')" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5"><i data-lucide="scale" class="w-3.5 h-3.5 text-[#DA8A5E]"></i><span>Terms of Service</span></button></li>
-            <li><button onclick="openPrivacyModal()" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5"><i data-lucide="cookie" class="w-3.5 h-3.5 text-[#DA8A5E]"></i><span>Cookie & Privacy Policy</span></button></li>
+          <ul class="space-y-3 text-xs text-gray-400">
+            <li>
+              <button onclick="switchTab('about')" class="w-full flex items-center gap-2 justify-center py-2 px-3 bg-gradient-to-r from-[#1E293B] to-[#0F172A] hover:from-[#334155] hover:to-[#1E293B] border border-[#C87D55]/30 hover:border-[#C87D55]/60 text-gray-300 hover:text-white rounded-xl transition-all duration-300 shadow-md">
+                <i data-lucide="info" class="w-4 h-4 text-[#DA8A5E]"></i>
+                <span class="font-medium">About Us</span>
+              </button>
+            </li>
+            <li>
+              <button onclick="switchTab('privacy')" class="w-full flex items-center gap-2 justify-center py-2 px-3 bg-gradient-to-r from-[#1E293B] to-[#0F172A] hover:from-[#334155] hover:to-[#1E293B] border border-[#C87D55]/30 hover:border-[#C87D55]/60 text-gray-300 hover:text-white rounded-xl transition-all duration-300 shadow-md">
+                <i data-lucide="shield-check" class="w-4 h-4 text-[#DA8A5E]"></i>
+                <span class="font-medium">Privacy Policy</span>
+              </button>
+            </li>
+            <li>
+              <a href="mailto:Business1921store@gmail.com" class="w-full flex items-center gap-2 justify-center py-2 px-3 bg-gradient-to-r from-[#C87D55]/20 to-[#98522B]/20 hover:from-[#C87D55]/40 hover:to-[#98522B]/40 border border-[#C87D55]/40 hover:border-[#DA8A5E] text-[#F2D5C4] hover:text-white rounded-xl transition-all duration-300 shadow-lg">
+                <i data-lucide="mail" class="w-4 h-4 text-[#DA8A5E]"></i>
+                <span class="font-medium">Contact Us</span>
+              </a>
+            </li>
+            <li><button onclick="switchTab('terms')" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5 pt-1"><i data-lucide="scale" class="w-3.5 h-3.5 text-gray-500"></i><span>Terms of Service</span></button></li>
+            <li><button onclick="openPrivacyModal()" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5 pt-1"><i data-lucide="cookie" class="w-3.5 h-3.5 text-gray-500"></i><span>Cookie & Privacy Policy</span></button></li>
           </ul>
         </div>
 
