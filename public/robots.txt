@@ -1,0 +1,6 @@
+# Robots.txt for Focus Creator Utility Hub
+User-agent: *
+Allow: /
+
+# Sitemap Index
+Sitemap: https://focus-creator-utility-free-hub.vercel.app/sitemap.xml

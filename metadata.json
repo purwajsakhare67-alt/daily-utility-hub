@@ -1,0 +1,6 @@
+{
+  "name": "Micro-Utility Hub",
+  "description": "An all-in-one developer and creator suite featuring Focus Studio, Text Cleaner, Color Palette Generator, Screenshot Mockup Studio, Background Remover, Reading & Speaking Time Estimator, Aspect Ratio Scaler, SVG to CSS/Data URI Converter, AI Design Utils, QR & Barcode Generator, and PDF Utility Hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
