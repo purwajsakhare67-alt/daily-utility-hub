@@ -194,17 +194,17 @@
             <span class="text-gray-200 font-medium tracking-wide">Zero Remote Uploads • 100% Local Execution</span>
           </div>
 
-          <div class="flex items-center gap-2">
-            <button onclick="switchTab('about')" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-[#1E293B] to-[#0F172A] hover:from-[#334155] hover:to-[#1E293B] border border-[#C87D55]/30 hover:border-[#C87D55]/60 text-gray-300 hover:text-white shadow-md transition-all duration-300 flex items-center gap-1.5 group">
-              <i data-lucide="info" class="w-4 h-4 text-[#DA8A5E] group-hover:text-white transition-colors"></i>
+          <div class="flex items-center gap-1.5 bg-[#0B1528]/90 p-1 rounded-xl border border-[#C87D55]/20">
+            <button onclick="switchTab('about')" class="px-2.5 py-1.5 rounded-lg text-xs font-medium text-gray-300 hover:text-[#F2D5C4] hover:bg-[#C87D55]/15 transition flex items-center gap-1.5">
+              <i data-lucide="info" class="w-3.5 h-3.5 text-[#DA8A5E]"></i>
               <span class="hidden md:inline">About Us</span>
             </button>
-            <button onclick="switchTab('privacy')" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-[#1E293B] to-[#0F172A] hover:from-[#334155] hover:to-[#1E293B] border border-[#C87D55]/30 hover:border-[#C87D55]/60 text-gray-300 hover:text-white shadow-md transition-all duration-300 flex items-center gap-1.5 group">
-              <i data-lucide="shield-check" class="w-4 h-4 text-[#DA8A5E] group-hover:text-white transition-colors"></i>
+            <button onclick="switchTab('privacy')" class="px-2.5 py-1.5 rounded-lg text-xs font-medium text-gray-300 hover:text-[#F2D5C4] hover:bg-[#C87D55]/15 transition flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#DA8A5E]"></i>
               <span class="hidden md:inline">Privacy Policy</span>
             </button>
-            <button onclick="switchTab('contact')" class="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-[#C87D55] to-[#B86B3E] hover:from-[#DA8A5E] hover:to-[#C87D55] text-white shadow-lg shadow-[#C87D55]/30 hover:shadow-[#C87D55]/50 border border-[#F2D5C4]/30 hover:brightness-110 transition-all duration-300 flex items-center gap-1.5 transform hover:-translate-y-0.5">
-              <i data-lucide="mail" class="w-4 h-4 text-white"></i>
+            <button onclick="switchTab('contact')" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-[#C87D55] to-[#B86B3E] text-white shadow-md shadow-[#C87D55]/20 hover:brightness-110 transition flex items-center gap-1.5">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-white"></i>
               <span>Contact Us</span>
             </button>
           </div>
@@ -472,7 +472,7 @@
               <span>Multi-Channel Ambient Soundscapes Engine</span>
             </div>
             <p class="leading-relaxed text-gray-400">
-              11 pristine acoustic channels with zero stutter, infinite seamless looping, independent volume mixers, and cross-tab persistence. Craft your bespoke focus, meditation, and sleep soundscape.
+              8 pristine acoustic channels with zero stutter, infinite seamless looping, independent volume mixers, and cross-tab persistence. Craft your bespoke focus, meditation, and sleep soundscape.
             </p>
           </div>
         </div>
@@ -485,7 +485,7 @@
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#C87D55]/20 pb-5">
           <div>
             <div class="flex items-center gap-2.5">
-              <h3 class="text-base sm:text-lg font-bold text-white tracking-tight">11 Ambient Sound Channels</h3>
+              <h3 class="text-base sm:text-lg font-bold text-white tracking-tight">8 Ambient Sound Channels</h3>
               <span class="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-[#C87D55]/20 text-[#F2D5C4] border border-[#C87D55]/40 font-semibold">2-Column Soundboard</span>
             </div>
             <p class="text-xs text-gray-400 mt-1">Multi-channel acoustic mixer with side-by-side controls and independent volume faders</p>
@@ -504,23 +504,23 @@
         <!-- 2-COLUMN RESPONSIVE SOUND CONTROLS GRID (grid-cols-1 md:grid-cols-2) -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           
-          <!-- SOUND 1: Heavy Rain & Thunder -->
-          <div id="card-sound-rain-thunder" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
+          <!-- SOUND: Heavy Rain & Thunder -->
+          <div id="card-sound-rain" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <div id="icon-box-rain-thunder" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
+                <div id="icon-box-rain" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
                   <span>⛈️</span>
                 </div>
                 <div>
                   <div class="flex items-center gap-2">
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Heavy Rain & Thunder</span>
-                    <span id="badge-status-rain-thunder" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
+                    <span id="badge-status-rain" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Deep rolling thunderclaps with intense rain backdrop</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Deep rolling thunder with pouring rain</p>
                 </div>
               </div>
-              <button onclick="toggleSound('rain-thunder')" id="btn-sound-rain-thunder" title="Toggle Heavy Rain & Thunder" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
-                <i id="btn-icon-rain-thunder" data-lucide="play" class="w-4 h-4"></i>
+              <button onclick="toggleSound('rain')" id="btn-sound-rain" title="Toggle Heavy Rain & Thunder" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
+                <i id="btn-icon-rain" data-lucide="play" class="w-4 h-4"></i>
               </button>
             </div>
             <div class="flex items-center gap-3 pt-1 border-t border-[#B87333]/15">
@@ -528,28 +528,28 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-rain-thunder" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('rain-thunder', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-rain-thunder" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-rain" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('rain', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-rain" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
             </div>
           </div>
 
-          <!-- SOUND 2: Rain on Tin Roof -->
-          <div id="card-sound-rain-roof" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
+          <!-- SOUND: Rain on Tin Roof -->
+          <div id="card-sound-roof" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <div id="icon-box-rain-roof" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
+                <div id="icon-box-roof" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
                   <span>🏠</span>
                 </div>
                 <div>
                   <div class="flex items-center gap-2">
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Rain on Tin Roof</span>
-                    <span id="badge-status-rain-roof" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
+                    <span id="badge-status-roof" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">High-frequency pattering water droplets on metal surface</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Crisp water drops pattering on metal surface</p>
                 </div>
               </div>
-              <button onclick="toggleSound('rain-roof')" id="btn-sound-rain-roof" title="Toggle Rain on Tin Roof" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
-                <i id="btn-icon-rain-roof" data-lucide="play" class="w-4 h-4"></i>
+              <button onclick="toggleSound('roof')" id="btn-sound-roof" title="Toggle Rain on Tin Roof" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
+                <i id="btn-icon-roof" data-lucide="play" class="w-4 h-4"></i>
               </button>
             </div>
             <div class="flex items-center gap-3 pt-1 border-t border-[#B87333]/15">
@@ -557,41 +557,12 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-rain-roof" type="range" min="0" max="1" step="0.01" value="0.60" oninput="setSoundVolume('rain-roof', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-rain-roof" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">60%</span>
+              <input id="vol-sound-roof" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('roof', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-roof" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
             </div>
           </div>
 
-          <!-- SOUND 3: Deep Ambient Soundscape -->
-          <div id="card-sound-ambient" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
-            <div class="flex items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div id="icon-box-ambient" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
-                  <span>🎶</span>
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Deep Ambient Soundscape</span>
-                    <span id="badge-status-ambient" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
-                  </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Serene atmospheric meditation pad with subtle resonant harmonics</p>
-                </div>
-              </div>
-              <button onclick="toggleSound('ambient')" id="btn-sound-ambient" title="Toggle Deep Ambient Soundscape" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
-                <i id="btn-icon-ambient" data-lucide="play" class="w-4 h-4"></i>
-              </button>
-            </div>
-            <div class="flex items-center gap-3 pt-1 border-t border-[#B87333]/15">
-              <span class="text-[10px] font-mono text-gray-400 uppercase tracking-wider shrink-0 flex items-center gap-1">
-                <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
-                <span>Vol</span>
-              </span>
-              <input id="vol-sound-ambient" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('ambient', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-ambient" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
-            </div>
-          </div>
-
-          <!-- SOUND 4: Forest Birds Chorus -->
+          <!-- SOUND: Forest Birds Chorus -->
           <div id="card-sound-birds" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
@@ -603,7 +574,7 @@
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Forest Birds Chorus</span>
                     <span id="badge-status-birds" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Dawn chorus featuring rich, multiple bird chirps</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Authentic woodland morning bird chirping</p>
                 </div>
               </div>
               <button onclick="toggleSound('birds')" id="btn-sound-birds" title="Toggle Forest Birds Chorus" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
@@ -615,12 +586,12 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-birds" type="range" min="0" max="1" step="0.01" value="0.55" oninput="setSoundVolume('birds', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-birds" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">55%</span>
+              <input id="vol-sound-birds" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('birds', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-birds" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
             </div>
           </div>
 
-          <!-- SOUND 5: Soft Night Wind -->
+          <!-- SOUND: Soft Night Wind -->
           <div id="card-sound-wind" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
@@ -632,7 +603,7 @@
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Soft Night Wind</span>
                     <span id="badge-status-wind" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Gentle, low-whistle soothing breeze</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Gentle natural nighttime breeze</p>
                 </div>
               </div>
               <button onclick="toggleSound('wind')" id="btn-sound-wind" title="Toggle Soft Night Wind" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
@@ -644,57 +615,28 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-wind" type="range" min="0" max="1" step="0.01" value="0.60" oninput="setSoundVolume('wind', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-wind" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">60%</span>
+              <input id="vol-sound-wind" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('wind', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-wind" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
             </div>
           </div>
 
-          <!-- SOUND 6: Relaxing Piano & Chimes -->
-          <div id="card-sound-piano" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
+          <!-- SOUND: Flowing Waterfall & Stream -->
+          <div id="card-sound-stream" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <div id="icon-box-piano" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
-                  <span>🎹</span>
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Relaxing Piano & Chimes</span>
-                    <span id="badge-status-piano" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
-                  </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Slow, meditative piano progressions with soft wind bells</p>
-                </div>
-              </div>
-              <button onclick="toggleSound('piano')" id="btn-sound-piano" title="Toggle Relaxing Piano & Chimes" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
-                <i id="btn-icon-piano" data-lucide="play" class="w-4 h-4"></i>
-              </button>
-            </div>
-            <div class="flex items-center gap-3 pt-1 border-t border-[#B87333]/15">
-              <span class="text-[10px] font-mono text-gray-400 uppercase tracking-wider shrink-0 flex items-center gap-1">
-                <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
-                <span>Vol</span>
-              </span>
-              <input id="vol-sound-piano" type="range" min="0" max="1" step="0.01" value="0.60" oninput="setSoundVolume('piano', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-piano" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">60%</span>
-            </div>
-          </div>
-
-          <!-- SOUND 7: Flowing Waterfall & Stream -->
-          <div id="card-sound-waterfall" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
-            <div class="flex items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div id="icon-box-waterfall" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
+                <div id="icon-box-stream" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
                   <span>🌊</span>
                 </div>
                 <div>
                   <div class="flex items-center gap-2">
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Flowing Waterfall & Stream</span>
-                    <span id="badge-status-waterfall" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
+                    <span id="badge-status-stream" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Constant, crisp white-noise water cascade</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Natural mountain stream water current</p>
                 </div>
               </div>
-              <button onclick="toggleSound('waterfall')" id="btn-sound-waterfall" title="Toggle Flowing Waterfall & Stream" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
-                <i id="btn-icon-waterfall" data-lucide="play" class="w-4 h-4"></i>
+              <button onclick="toggleSound('stream')" id="btn-sound-stream" title="Toggle Flowing Waterfall & Stream" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
+                <i id="btn-icon-stream" data-lucide="play" class="w-4 h-4"></i>
               </button>
             </div>
             <div class="flex items-center gap-3 pt-1 border-t border-[#B87333]/15">
@@ -702,28 +644,28 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-waterfall" type="range" min="0" max="1" step="0.01" value="0.55" oninput="setSoundVolume('waterfall', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-waterfall" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">55%</span>
+              <input id="vol-sound-stream" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('stream', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-stream" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
             </div>
           </div>
 
-          <!-- SOUND 8: Cozy Fireplace -->
-          <div id="card-sound-fireplace" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
+          <!-- SOUND: Cozy Fireplace -->
+          <div id="card-sound-fire" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
-                <div id="icon-box-fireplace" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
+                <div id="icon-box-fire" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
                   <span>🔥</span>
                 </div>
                 <div>
                   <div class="flex items-center gap-2">
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Cozy Fireplace</span>
-                    <span id="badge-status-fireplace" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
+                    <span id="badge-status-fire" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Gentle wood crackles and warm fire pops</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Natural wood crackling and warm ember pops</p>
                 </div>
               </div>
-              <button onclick="toggleSound('fireplace')" id="btn-sound-fireplace" title="Toggle Cozy Fireplace" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
-                <i id="btn-icon-fireplace" data-lucide="play" class="w-4 h-4"></i>
+              <button onclick="toggleSound('fire')" id="btn-sound-fire" title="Toggle Cozy Fireplace" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
+                <i id="btn-icon-fire" data-lucide="play" class="w-4 h-4"></i>
               </button>
             </div>
             <div class="flex items-center gap-3 pt-1 border-t border-[#B87333]/15">
@@ -731,12 +673,12 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-fireplace" type="range" min="0" max="1" step="0.01" value="0.60" oninput="setSoundVolume('fireplace', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-fireplace" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">60%</span>
+              <input id="vol-sound-fire" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('fire', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-fire" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
             </div>
           </div>
 
-          <!-- SOUND 9: Ocean Waves -->
+          <!-- SOUND: Ocean Surf Waves -->
           <div id="card-sound-ocean" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
@@ -745,13 +687,13 @@
                 </div>
                 <div>
                   <div class="flex items-center gap-2">
-                    <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Ocean Waves</span>
+                    <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Ocean Surf Waves</span>
                     <span id="badge-status-ocean" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Rhythmic slow surf washing over a sandy shoreline</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Rhythmic coastal waves on shore</p>
                 </div>
               </div>
-              <button onclick="toggleSound('ocean')" id="btn-sound-ocean" title="Toggle Ocean Waves" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
+              <button onclick="toggleSound('ocean')" id="btn-sound-ocean" title="Toggle Ocean Surf Waves" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
                 <i id="btn-icon-ocean" data-lucide="play" class="w-4 h-4"></i>
               </button>
             </div>
@@ -765,7 +707,7 @@
             </div>
           </div>
 
-          <!-- SOUND 10: Midnight Crickets -->
+          <!-- SOUND: Midnight Crickets -->
           <div id="card-sound-crickets" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
@@ -777,7 +719,7 @@
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Midnight Crickets</span>
                     <span id="badge-status-crickets" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Steady, high-pitch rhythmic night insect chorus</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Steady summer night cricket chorus</p>
                 </div>
               </div>
               <button onclick="toggleSound('crickets')" id="btn-sound-crickets" title="Toggle Midnight Crickets" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
@@ -789,42 +731,11 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-crickets" type="range" min="0" max="1" step="0.01" value="0.50" oninput="setSoundVolume('crickets', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-crickets" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">50%</span>
+              <input id="vol-sound-crickets" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('crickets', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-crickets" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
             </div>
           </div>
-
-          <!-- SOUND 11: Deep Brown Noise (Spans 2 columns on medium screens for prominent ADHD Focus anchoring) -->
-          <div id="card-sound-brown-noise" class="sound-card md:col-span-2 relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
-            <div class="flex items-center justify-between gap-3">
-              <div class="flex items-center gap-3">
-                <div id="icon-box-brown-noise" class="w-11 h-11 rounded-xl bg-[#111827] text-2xl border border-[#B87333]/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:scale-105 shadow-inner">
-                  <span>🎧</span>
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Deep Brown Noise</span>
-                    <span id="badge-status-brown-noise" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
-                  </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Low-frequency rumble optimized for deep sleep, ADHD focus, and acoustic masking</p>
-                </div>
-              </div>
-              <button onclick="toggleSound('brown-noise')" id="btn-sound-brown-noise" title="Toggle Deep Brown Noise" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
-                <i id="btn-icon-brown-noise" data-lucide="play" class="w-4 h-4"></i>
-              </button>
-            </div>
-            <div class="flex items-center gap-3 pt-1 border-t border-[#B87333]/15">
-              <span class="text-[10px] font-mono text-gray-400 uppercase tracking-wider shrink-0 flex items-center gap-1">
-                <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
-                <span>Vol</span>
-              </span>
-              <input id="vol-sound-brown-noise" type="range" min="0" max="1" step="0.01" value="0.55" oninput="setSoundVolume('brown-noise', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-brown-noise" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">55%</span>
-            </div>
-          </div>
-
         </div>
-      </div>
 
       <!-- Before vs After Transformation Showcase -->
       <div class="bg-[#0B1528]/90 backdrop-blur-xl border border-[#C87D55]/25 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-4">
@@ -3425,7 +3336,7 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
           </p>
           <div class="flex items-center gap-2 text-[11px] text-gray-400">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>All 11 Micro-Tools Active & Verified</span>
+            <span>All 8 Micro-Tools Active & Verified</span>
           </div>
         </div>
 
@@ -3447,27 +3358,11 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
         <!-- Column 3: Company & Legal (2 cols) -->
         <div class="lg:col-span-2 space-y-3">
           <h4 class="text-xs font-bold text-white uppercase tracking-wider">Company & Legal</h4>
-          <ul class="space-y-3 text-xs text-gray-400">
-            <li>
-              <button onclick="switchTab('about')" class="w-full flex items-center gap-2 justify-center py-2 px-3 bg-gradient-to-r from-[#1E293B] to-[#0F172A] hover:from-[#334155] hover:to-[#1E293B] border border-[#C87D55]/30 hover:border-[#C87D55]/60 text-gray-300 hover:text-white rounded-xl transition-all duration-300 shadow-md">
-                <i data-lucide="info" class="w-4 h-4 text-[#DA8A5E]"></i>
-                <span class="font-medium">About Us</span>
-              </button>
-            </li>
-            <li>
-              <button onclick="switchTab('privacy')" class="w-full flex items-center gap-2 justify-center py-2 px-3 bg-gradient-to-r from-[#1E293B] to-[#0F172A] hover:from-[#334155] hover:to-[#1E293B] border border-[#C87D55]/30 hover:border-[#C87D55]/60 text-gray-300 hover:text-white rounded-xl transition-all duration-300 shadow-md">
-                <i data-lucide="shield-check" class="w-4 h-4 text-[#DA8A5E]"></i>
-                <span class="font-medium">Privacy Policy</span>
-              </button>
-            </li>
-            <li>
-              <a href="mailto:Business1921store@gmail.com" class="w-full flex items-center gap-2 justify-center py-2 px-3 bg-gradient-to-r from-[#C87D55]/20 to-[#98522B]/20 hover:from-[#C87D55]/40 hover:to-[#98522B]/40 border border-[#C87D55]/40 hover:border-[#DA8A5E] text-[#F2D5C4] hover:text-white rounded-xl transition-all duration-300 shadow-lg">
-                <i data-lucide="mail" class="w-4 h-4 text-[#DA8A5E]"></i>
-                <span class="font-medium">Contact Us</span>
-              </a>
-            </li>
-            <li><button onclick="switchTab('terms')" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5 pt-1"><i data-lucide="scale" class="w-3.5 h-3.5 text-gray-500"></i><span>Terms of Service</span></button></li>
-            <li><button onclick="openPrivacyModal()" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5 pt-1"><i data-lucide="cookie" class="w-3.5 h-3.5 text-gray-500"></i><span>Cookie & Privacy Policy</span></button></li>
+          <ul class="space-y-2 text-xs text-gray-400">
+            <li><button onclick="switchTab('about')" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5"><i data-lucide="info" class="w-3.5 h-3.5 text-[#DA8A5E]"></i><span>About Us</span></button></li>
+            <li><button onclick="switchTab('privacy')" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#DA8A5E]"></i><span>Privacy Policy</span></button></li>
+            <li><button onclick="switchTab('terms')" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5"><i data-lucide="scale" class="w-3.5 h-3.5 text-[#DA8A5E]"></i><span>Terms of Service</span></button></li>
+            <li><button onclick="openPrivacyModal()" class="hover:text-[#F2D5C4] transition flex items-center gap-1.5"><i data-lucide="cookie" class="w-3.5 h-3.5 text-[#DA8A5E]"></i><span>Cookie & Privacy Policy</span></button></li>
           </ul>
         </div>
 
@@ -3581,7 +3476,18 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
   <!-- JAVASCRIPT APP LOGIC                                              -->
   <!-- ================================================================= -->
   <script>
-    // APP STATE
+
+    const AMBIENT_SOUNDS = [
+      { id: "rain", title: "Heavy Rain & Thunder", icon: "⛈️", desc: "Deep rolling thunder with pouring rain", url: "https://actions.google.com/sounds/v1/weather/rain_heavy.ogg" },
+      { id: "roof", title: "Rain on Tin Roof", icon: "🏠", desc: "Crisp water drops pattering on metal surface", url: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rain_on_a_tin_roof.ogg" },
+      { id: "birds", title: "Forest Birds Chorus", icon: "🐦", desc: "Authentic woodland morning bird chirping", url: "https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonanza.ogg" },
+      { id: "wind", title: "Soft Night Wind", icon: "💨", desc: "Gentle natural nighttime breeze", url: "https://actions.google.com/sounds/v1/weather/wind_breeze.ogg" },
+      { id: "stream", title: "Flowing Waterfall & Stream", icon: "🌊", desc: "Natural mountain stream water current", url: "https://actions.google.com/sounds/v1/water/creek_water_flow.ogg" },
+      { id: "fire", title: "Cozy Fireplace", icon: "🔥", desc: "Natural wood crackling and warm ember pops", url: "https://actions.google.com/sounds/v1/household/fireplace_crackling.ogg" },
+      { id: "ocean", title: "Ocean Surf Waves", icon: "🏖️", desc: "Rhythmic coastal waves on shore", url: "https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" },
+      { id: "crickets", title: "Midnight Crickets", icon: "🦗", desc: "Steady summer night cricket chorus", url: "https://actions.google.com/sounds/v1/ambiences/meadow_night_ambience.ogg" }
+    ];
+// APP STATE
     const state = {
       currentTab: 'focus',
 
@@ -3597,17 +3503,14 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
       },
       masterVolume: 0.8,
       audioChannels: {
-        'rain-thunder': { active: false, audio: null, vol: 0.65 },
-        'rain-roof': { active: false, audio: null, vol: 0.60 },
-        'ambient': { active: false, audio: null, vol: 0.65 },
-        'birds': { active: false, audio: null, vol: 0.55 },
-        'wind': { active: false, audio: null, vol: 0.60 },
-        'piano': { active: false, audio: null, vol: 0.60 },
-        'waterfall': { active: false, audio: null, vol: 0.55 },
-        'fireplace': { active: false, audio: null, vol: 0.60 },
-        'ocean': { active: false, audio: null, vol: 0.65 },
-        'crickets': { active: false, audio: null, vol: 0.50 },
-        'brown-noise': { active: false, audio: null, vol: 0.55 }
+        'rain': { active: false, audio: null, vol: 0.65, url: "https://actions.google.com/sounds/v1/weather/rain_heavy.ogg" },
+        'roof': { active: false, audio: null, vol: 0.60, url: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rain_on_a_tin_roof.ogg" },
+        'birds': { active: false, audio: null, vol: 0.55, url: "https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonanza.ogg" },
+        'wind': { active: false, audio: null, vol: 0.60, url: "https://actions.google.com/sounds/v1/weather/wind_breeze.ogg" },
+        'stream': { active: false, audio: null, vol: 0.55, url: "https://actions.google.com/sounds/v1/water/creek_water_flow.ogg" },
+        'fire': { active: false, audio: null, vol: 0.60, url: "https://actions.google.com/sounds/v1/household/fireplace_crackling.ogg" },
+        'ocean': { active: false, audio: null, vol: 0.65, url: "https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" },
+        'crickets': { active: false, audio: null, vol: 0.50, url: "https://actions.google.com/sounds/v1/ambiences/meadow_night_ambience.ogg" }
       },
 
       // Color Palette
@@ -3935,744 +3838,6 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
       else setTimerMode('work');
     }
 
-    // ===================================================================
-    // HIGH-FIDELITY PROCEDURAL WEB AUDIO SYNTHESIZER ENGINE
-    // 100% Zero-Latency, Zero External Dependencies, Crystal-Clear Audio
-    // ===================================================================
-    let audioCtx = null;
-    let whiteNoiseBuffer = null;
-    let pinkNoiseBuffer = null;
-    let brownNoiseBuffer = null;
-
-    function initAudioContext() {
-      if (!audioCtx) {
-        const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
-        if (AudioCtxClass) {
-          audioCtx = new AudioCtxClass();
-        }
-      }
-      if (audioCtx && audioCtx.state === 'suspended') {
-        audioCtx.resume().catch(() => {});
-      }
-      return audioCtx;
-    }
-
-    // Auto-unlock audio context on first user gesture anywhere
-    ['click', 'touchstart', 'keydown'].forEach(evtType => {
-      window.addEventListener(evtType, () => {
-        if (audioCtx && audioCtx.state === 'suspended') {
-          audioCtx.resume().catch(() => {});
-        }
-      }, { once: false, passive: true });
-    });
-
-    function getNoiseBuffer(type) {
-      const ctx = initAudioContext();
-      if (!ctx) return null;
-
-      if (type === 'white') {
-        if (!whiteNoiseBuffer) {
-          const bufferSize = ctx.sampleRate * 4;
-          whiteNoiseBuffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-          const data = whiteNoiseBuffer.getChannelData(0);
-          for (let i = 0; i < bufferSize; i++) {
-            data[i] = Math.random() * 2 - 1;
-          }
-        }
-        return whiteNoiseBuffer;
-      }
-
-      if (type === 'pink') {
-        if (!pinkNoiseBuffer) {
-          const bufferSize = ctx.sampleRate * 4;
-          pinkNoiseBuffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-          const data = pinkNoiseBuffer.getChannelData(0);
-          let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
-          for (let i = 0; i < bufferSize; i++) {
-            const white = Math.random() * 2 - 1;
-            b0 = 0.99886 * b0 + white * 0.0555179;
-            b1 = 0.99332 * b1 + white * 0.0750759;
-            b2 = 0.96900 * b2 + white * 0.1538520;
-            b3 = 0.86650 * b3 + white * 0.3104856;
-            b4 = 0.55000 * b4 + white * 0.5329522;
-            b5 = -0.7616 * b5 - white * 0.0168980;
-            data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.11;
-            b6 = white * 0.115926;
-          }
-        }
-        return pinkNoiseBuffer;
-      }
-
-      if (type === 'brown') {
-        if (!brownNoiseBuffer) {
-          const bufferSize = ctx.sampleRate * 4;
-          brownNoiseBuffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-          const data = brownNoiseBuffer.getChannelData(0);
-          let lastOut = 0.0;
-          for (let i = 0; i < bufferSize; i++) {
-            const white = Math.random() * 2 - 1;
-            data[i] = (lastOut + (0.02 * white)) / 1.02;
-            lastOut = data[i];
-            data[i] *= 3.5;
-          }
-        }
-        return brownNoiseBuffer;
-      }
-
-      return null;
-    }
-
-    function createLoopSource(ctx, buffer) {
-      if (!ctx || !buffer) return null;
-      const src = ctx.createBufferSource();
-      src.buffer = buffer;
-      src.loop = true;
-      return src;
-    }
-
-    // Synthesizer Modules for each soundscape channel
-    const soundSynthesizers = {
-      'rain-thunder': (ctx, mainGain) => {
-        // Continuous rain bed
-        const pinkBuf = getNoiseBuffer('pink');
-        const rainSrc = createLoopSource(ctx, pinkBuf);
-        const rainFilter = ctx.createBiquadFilter();
-        rainFilter.type = 'lowpass';
-        rainFilter.frequency.setValueAtTime(750, ctx.currentTime);
-        rainFilter.Q.setValueAtTime(1.2, ctx.currentTime);
-
-        const rainGain = ctx.createGain();
-        rainGain.gain.setValueAtTime(0.7, ctx.currentTime);
-
-        rainSrc.connect(rainFilter);
-        rainFilter.connect(rainGain);
-        rainGain.connect(mainGain);
-        rainSrc.start();
-
-        // Periodic Thunder generator
-        let thunderTimer = null;
-        function scheduleThunder() {
-          const delay = Math.random() * 7000 + 7000; // every 7-14s
-          thunderTimer = setTimeout(() => {
-            if (!ctx || ctx.state === 'closed') return;
-            try {
-              const now = ctx.currentTime;
-              // Sub-bass rumble osc
-              const osc = ctx.createOscillator();
-              osc.type = 'triangle';
-              osc.frequency.setValueAtTime(65, now);
-              osc.frequency.exponentialRampToValueAtTime(32, now + 3.2);
-
-              const oscGain = ctx.createGain();
-              oscGain.gain.setValueAtTime(0.01, now);
-              oscGain.gain.linearRampToValueAtTime(0.65, now + 0.35);
-              oscGain.gain.exponentialRampToValueAtTime(0.001, now + 3.5);
-
-              // Brown noise rumble burst
-              const brownSrc = createLoopSource(ctx, getNoiseBuffer('brown'));
-              const brownFilter = ctx.createBiquadFilter();
-              brownFilter.type = 'lowpass';
-              brownFilter.frequency.setValueAtTime(220, now);
-
-              const burstGain = ctx.createGain();
-              burstGain.gain.setValueAtTime(0.01, now);
-              burstGain.gain.linearRampToValueAtTime(0.5, now + 0.3);
-              burstGain.gain.exponentialRampToValueAtTime(0.001, now + 3.8);
-
-              osc.connect(oscGain);
-              oscGain.connect(mainGain);
-
-              brownSrc.connect(brownFilter);
-              brownFilter.connect(burstGain);
-              burstGain.connect(mainGain);
-
-              osc.start(now);
-              brownSrc.start(now);
-              osc.stop(now + 3.9);
-              brownSrc.stop(now + 3.9);
-            } catch (e) {}
-            scheduleThunder();
-          }, delay);
-        }
-        scheduleThunder();
-
-        return () => {
-          if (thunderTimer) clearTimeout(thunderTimer);
-          try { rainSrc.stop(); rainSrc.disconnect(); } catch (e) {}
-        };
-      },
-
-      'rain-roof': (ctx, mainGain) => {
-        // High frequency filtered patter
-        const pinkBuf = getNoiseBuffer('pink');
-        const src = createLoopSource(ctx, pinkBuf);
-        
-        const hpFilter = ctx.createBiquadFilter();
-        hpFilter.type = 'highpass';
-        hpFilter.frequency.setValueAtTime(2400, ctx.currentTime);
-
-        const bpFilter = ctx.createBiquadFilter();
-        bpFilter.type = 'bandpass';
-        bpFilter.frequency.setValueAtTime(3600, ctx.currentTime);
-        bpFilter.Q.setValueAtTime(2.5, ctx.currentTime);
-
-        const subGain = ctx.createGain();
-        subGain.gain.setValueAtTime(0.55, ctx.currentTime);
-
-        src.connect(hpFilter);
-        hpFilter.connect(bpFilter);
-        bpFilter.connect(subGain);
-        subGain.connect(mainGain);
-        src.start();
-
-        // Droplet click micro-triggers
-        let dropTimer = null;
-        function scheduleDroplets() {
-          const interval = Math.random() * 45 + 35;
-          dropTimer = setTimeout(() => {
-            if (!ctx || ctx.state === 'closed') return;
-            try {
-              const now = ctx.currentTime;
-              const dropGain = ctx.createGain();
-              dropGain.gain.setValueAtTime(Math.random() * 0.35 + 0.1, now);
-              dropGain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
-
-              const dropOsc = ctx.createOscillator();
-              dropOsc.type = 'sine';
-              dropOsc.frequency.setValueAtTime(Math.random() * 1400 + 2200, now);
-              dropOsc.frequency.exponentialRampToValueAtTime(800, now + 0.04);
-
-              dropOsc.connect(dropGain);
-              dropGain.connect(mainGain);
-              dropOsc.start(now);
-              dropOsc.stop(now + 0.045);
-            } catch(e) {}
-            scheduleDroplets();
-          }, interval);
-        }
-        scheduleDroplets();
-
-        return () => {
-          if (dropTimer) clearTimeout(dropTimer);
-          try { src.stop(); src.disconnect(); } catch (e) {}
-        };
-      },
-
-      'ambient': (ctx, mainGain) => {
-        // Deep Ambient Soundscape: Warm meditative pad with gentle binaural sweep & shimmer harmonics
-        const padFreqs = [110.00, 164.81, 220.00, 329.63]; // A Minor warm chord bed
-        const oscs = [];
-        const padMasterGain = ctx.createGain();
-        padMasterGain.gain.setValueAtTime(0.45, ctx.currentTime);
-
-        const padFilter = ctx.createBiquadFilter();
-        padFilter.type = 'lowpass';
-        padFilter.frequency.setValueAtTime(550, ctx.currentTime);
-        padFilter.Q.setValueAtTime(1.2, ctx.currentTime);
-
-        // Slow breathing LFO for pad filter
-        const filterLfo = ctx.createOscillator();
-        filterLfo.type = 'sine';
-        filterLfo.frequency.setValueAtTime(0.06, ctx.currentTime);
-        const filterLfoGain = ctx.createGain();
-        filterLfoGain.gain.setValueAtTime(280, ctx.currentTime);
-        filterLfo.connect(filterLfoGain);
-        filterLfoGain.connect(padFilter.frequency);
-        filterLfo.start();
-
-        padFreqs.forEach((freq, i) => {
-          // Main warm sine
-          const oscA = ctx.createOscillator();
-          oscA.type = 'sine';
-          oscA.frequency.setValueAtTime(freq, ctx.currentTime);
-
-          // Detuned chorus sine for natural organic beat
-          const oscB = ctx.createOscillator();
-          oscB.type = 'triangle';
-          oscB.frequency.setValueAtTime(freq * 1.003 + (i * 0.1), ctx.currentTime);
-
-          const gA = ctx.createGain();
-          gA.gain.setValueAtTime(0.18, ctx.currentTime);
-          const gB = ctx.createGain();
-          gB.gain.setValueAtTime(0.08, ctx.currentTime);
-
-          oscA.connect(gA);
-          oscB.connect(gB);
-          gA.connect(padFilter);
-          gB.connect(padFilter);
-
-          oscA.start();
-          oscB.start();
-          oscs.push(oscA, oscB);
-        });
-
-        padFilter.connect(padMasterGain);
-        padMasterGain.connect(mainGain);
-
-        // Periodic ethereal harmonic chime glimmers
-        let chimeTimer = null;
-        const shimmerPool = [523.25, 659.25, 783.99, 987.77, 1046.50, 1318.51];
-        function playShimmerNote() {
-          if (!ctx || ctx.state === 'closed') return;
-          const now = ctx.currentTime;
-          const noteFreq = shimmerPool[Math.floor(Math.random() * shimmerPool.length)];
-
-          const sOsc = ctx.createOscillator();
-          sOsc.type = 'sine';
-          sOsc.frequency.setValueAtTime(noteFreq, now);
-
-          const sGain = ctx.createGain();
-          sGain.gain.setValueAtTime(0.0001, now);
-          sGain.gain.linearRampToValueAtTime(0.12, now + 0.15);
-          sGain.gain.exponentialRampToValueAtTime(0.0001, now + 3.8);
-
-          sOsc.connect(sGain);
-          sGain.connect(mainGain);
-
-          sOsc.start(now);
-          sOsc.stop(now + 4.0);
-
-          const nextDelay = Math.random() * 2500 + 2000;
-          chimeTimer = setTimeout(playShimmerNote, nextDelay);
-        }
-        playShimmerNote();
-
-        return () => {
-          if (chimeTimer) clearTimeout(chimeTimer);
-          try {
-            filterLfo.stop(); filterLfo.disconnect();
-            oscs.forEach(o => { try { o.stop(); o.disconnect(); } catch(e) {} });
-          } catch(e) {}
-        };
-      },
-
-      'birds': (ctx, mainGain) => {
-        // Natural Forest Air
-        const pinkBuf = getNoiseBuffer('pink');
-        const airSrc = createLoopSource(ctx, pinkBuf);
-        const airFilter = ctx.createBiquadFilter();
-        airFilter.type = 'bandpass';
-        airFilter.frequency.setValueAtTime(800, ctx.currentTime);
-        airFilter.Q.setValueAtTime(1.0, ctx.currentTime);
-        const airGain = ctx.createGain();
-        airGain.gain.setValueAtTime(0.08, ctx.currentTime);
-        airSrc.connect(airFilter);
-        airFilter.connect(airGain);
-        airGain.connect(mainGain);
-        airSrc.start();
-
-        // Procedural bird song phrases
-        let birdTimer = null;
-        function singPhrase() {
-          if (!ctx || ctx.state === 'closed') return;
-          const now = ctx.currentTime;
-          const notes = [
-            Math.random() * 400 + 2600,
-            Math.random() * 500 + 3200,
-            Math.random() * 600 + 3800,
-            Math.random() * 600 + 4400
-          ];
-          const noteCount = Math.floor(Math.random() * 3) + 2;
-          
-          let tOffset = 0;
-          for (let i = 0; i < noteCount; i++) {
-            const freq = notes[i % notes.length];
-            const startTime = now + tOffset;
-            const dur = Math.random() * 0.08 + 0.09;
-
-            const osc = ctx.createOscillator();
-            osc.type = 'sine';
-            osc.frequency.setValueAtTime(freq, startTime);
-            osc.frequency.exponentialRampToValueAtTime(freq * (Math.random() > 0.5 ? 1.2 : 0.85), startTime + dur);
-
-            // Vibrato LFO
-            const lfo = ctx.createOscillator();
-            lfo.frequency.setValueAtTime(16, startTime);
-            const lfoGain = ctx.createGain();
-            lfoGain.gain.setValueAtTime(45, startTime);
-            lfo.connect(osc.frequency);
-
-            const nGain = ctx.createGain();
-            nGain.gain.setValueAtTime(0.001, startTime);
-            nGain.gain.linearRampToValueAtTime(0.35, startTime + 0.02);
-            nGain.gain.exponentialRampToValueAtTime(0.001, startTime + dur);
-
-            osc.connect(nGain);
-            nGain.connect(mainGain);
-
-            lfo.start(startTime);
-            osc.start(startTime);
-            lfo.stop(startTime + dur);
-            osc.stop(startTime + dur);
-
-            tOffset += dur + (Math.random() * 0.07 + 0.04);
-          }
-
-          const nextSing = Math.random() * 2600 + 2000;
-          birdTimer = setTimeout(singPhrase, nextSing);
-        }
-        singPhrase();
-
-        return () => {
-          if (birdTimer) clearTimeout(birdTimer);
-          try { airSrc.stop(); airSrc.disconnect(); } catch (e) {}
-        };
-      },
-
-      'wind': (ctx, mainGain) => {
-        const pinkBuf = getNoiseBuffer('pink');
-        const src = createLoopSource(ctx, pinkBuf);
-
-        const filter = ctx.createBiquadFilter();
-        filter.type = 'bandpass';
-        filter.frequency.setValueAtTime(320, ctx.currentTime);
-        filter.Q.setValueAtTime(3.2, ctx.currentTime);
-
-        // LFO for frequency sweep
-        const freqLfo = ctx.createOscillator();
-        freqLfo.frequency.setValueAtTime(0.1, ctx.currentTime);
-        const freqLfoGain = ctx.createGain();
-        freqLfoGain.gain.setValueAtTime(220, ctx.currentTime);
-        freqLfo.connect(freqLfoGain);
-        freqLfoGain.connect(filter.frequency);
-
-        // LFO for gentle swell
-        const ampLfo = ctx.createOscillator();
-        ampLfo.frequency.setValueAtTime(0.06, ctx.currentTime);
-        const ampLfoGain = ctx.createGain();
-        ampLfoGain.gain.setValueAtTime(0.2, ctx.currentTime);
-
-        const subGain = ctx.createGain();
-        subGain.gain.setValueAtTime(0.65, ctx.currentTime);
-        ampLfo.connect(ampLfoGain);
-        ampLfoGain.connect(subGain.gain);
-
-        src.connect(filter);
-        filter.connect(subGain);
-        subGain.connect(mainGain);
-
-        src.start();
-        freqLfo.start();
-        ampLfo.start();
-
-        return () => {
-          try {
-            src.stop(); freqLfo.stop(); ampLfo.stop();
-            src.disconnect();
-          } catch(e) {}
-        };
-      },
-
-      'piano': (ctx, mainGain) => {
-        // Lush Relaxing Piano & Chimes: Multi-harmonic acoustic piano emulation with warm room resonance & chimes
-        const chordPool = [
-          { bass: 130.81, notes: [261.63, 329.63, 392.00, 493.88, 587.33] }, // Cmaj9
-          { bass: 110.00, notes: [220.00, 261.63, 329.63, 392.00, 493.88] }, // Am9
-          { bass: 87.31,  notes: [174.61, 261.63, 329.63, 392.00, 523.25] }, // Fmaj7#11
-          { bass: 98.00,  notes: [196.00, 246.94, 293.66, 392.00, 440.00] }, // Gsus4/add9
-          { bass: 82.41,  notes: [164.81, 246.94, 293.66, 329.63, 392.00] }  // Em7
-        ];
-
-        let pianoTimer = null;
-        function playPianoPhrase() {
-          if (!ctx || ctx.state === 'closed') return;
-          const chord = chordPool[Math.floor(Math.random() * chordPool.length)];
-          const now = ctx.currentTime;
-
-          // Play warm deep bass note
-          const bOsc = ctx.createOscillator();
-          bOsc.type = 'sine';
-          bOsc.frequency.setValueAtTime(chord.bass, now);
-          const bGain = ctx.createGain();
-          bGain.gain.setValueAtTime(0.001, now);
-          bGain.gain.linearRampToValueAtTime(0.4, now + 0.04);
-          bGain.gain.exponentialRampToValueAtTime(0.0005, now + 4.5);
-          bOsc.connect(bGain);
-          bGain.connect(mainGain);
-          bOsc.start(now);
-          bOsc.stop(now + 4.6);
-
-          // Select 3 to 4 notes from the chord to arpeggiate gently
-          const selectedNotes = chord.notes.slice().sort(() => 0.5 - Math.random()).slice(0, 3);
-          selectedNotes.forEach((freq, idx) => {
-            const noteTime = now + (idx * (0.35 + Math.random() * 0.15)) + 0.08;
-
-            // 1st Harmonic (Fundamental Piano Body)
-            const osc1 = ctx.createOscillator();
-            osc1.type = 'triangle';
-            osc1.frequency.setValueAtTime(freq, noteTime);
-
-            // 2nd Harmonic (Warm mid string resonance)
-            const osc2 = ctx.createOscillator();
-            osc2.type = 'sine';
-            osc2.frequency.setValueAtTime(freq * 2, noteTime);
-
-            // 3rd Harmonic (Gentle bell overtone)
-            const osc3 = ctx.createOscillator();
-            osc3.type = 'sine';
-            osc3.frequency.setValueAtTime(freq * 3.01, noteTime);
-
-            const filter = ctx.createBiquadFilter();
-            filter.type = 'lowpass';
-            filter.frequency.setValueAtTime(freq * 3.5, noteTime);
-            filter.frequency.exponentialRampToValueAtTime(freq * 1.5, noteTime + 2.5);
-
-            const toneGain = ctx.createGain();
-            toneGain.gain.setValueAtTime(0.001, noteTime);
-            toneGain.gain.linearRampToValueAtTime(0.32, noteTime + 0.02);
-            toneGain.gain.exponentialRampToValueAtTime(0.0005, noteTime + 3.8);
-
-            const toneGain2 = ctx.createGain();
-            toneGain2.gain.setValueAtTime(0.001, noteTime);
-            toneGain2.gain.linearRampToValueAtTime(0.12, noteTime + 0.015);
-            toneGain2.gain.exponentialRampToValueAtTime(0.0005, noteTime + 2.4);
-
-            const toneGain3 = ctx.createGain();
-            toneGain3.gain.setValueAtTime(0.001, noteTime);
-            toneGain3.gain.linearRampToValueAtTime(0.05, noteTime + 0.01);
-            toneGain3.gain.exponentialRampToValueAtTime(0.0005, noteTime + 1.8);
-
-            osc1.connect(toneGain);
-            osc2.connect(toneGain2);
-            osc3.connect(toneGain3);
-
-            toneGain.connect(filter);
-            toneGain2.connect(filter);
-            toneGain3.connect(filter);
-            filter.connect(mainGain);
-
-            osc1.start(noteTime);
-            osc2.start(noteTime);
-            osc3.start(noteTime);
-            osc1.stop(noteTime + 3.9);
-            osc2.stop(noteTime + 3.9);
-            osc3.stop(noteTime + 3.9);
-          });
-
-          const nextDelay = Math.random() * 2200 + 3800;
-          pianoTimer = setTimeout(playPianoPhrase, nextDelay);
-        }
-        playPianoPhrase();
-
-        return () => {
-          if (pianoTimer) clearTimeout(pianoTimer);
-        };
-      },
-
-      'waterfall': (ctx, mainGain) => {
-        const whiteBuf = getNoiseBuffer('white');
-        const pinkBuf = getNoiseBuffer('pink');
-
-        const srcW = createLoopSource(ctx, whiteBuf);
-        const srcP = createLoopSource(ctx, pinkBuf);
-
-        const filterLp = ctx.createBiquadFilter();
-        filterLp.type = 'lowpass';
-        filterLp.frequency.setValueAtTime(1100, ctx.currentTime);
-        filterLp.Q.setValueAtTime(1.1, ctx.currentTime);
-
-        const filterHp = ctx.createBiquadFilter();
-        filterHp.type = 'highpass';
-        filterHp.frequency.setValueAtTime(180, ctx.currentTime);
-
-        const subGain = ctx.createGain();
-        subGain.gain.setValueAtTime(0.65, ctx.currentTime);
-
-        srcW.connect(filterLp);
-        srcP.connect(filterLp);
-        filterLp.connect(filterHp);
-        filterHp.connect(subGain);
-        subGain.connect(mainGain);
-
-        srcW.start();
-        srcP.start();
-
-        return () => {
-          try {
-            srcW.stop(); srcP.stop();
-            srcW.disconnect(); srcP.disconnect();
-          } catch(e) {}
-        };
-      },
-
-      'fireplace': (ctx, mainGain) => {
-        // Low warm hearth drone
-        const brownBuf = getNoiseBuffer('brown');
-        const droneSrc = createLoopSource(ctx, brownBuf);
-        const droneFilter = ctx.createBiquadFilter();
-        droneFilter.type = 'lowpass';
-        droneFilter.frequency.setValueAtTime(160, ctx.currentTime);
-        const droneGain = ctx.createGain();
-        droneGain.gain.setValueAtTime(0.35, ctx.currentTime);
-        droneSrc.connect(droneFilter);
-        droneFilter.connect(droneGain);
-        droneGain.connect(mainGain);
-        droneSrc.start();
-
-        // Continuous stochastic wood snap & crackle generator
-        let fireTimer = null;
-        function scheduleCrackles() {
-          if (!ctx || ctx.state === 'closed') return;
-          const interval = Math.random() * 90 + 25;
-          fireTimer = setTimeout(() => {
-            try {
-              const now = ctx.currentTime;
-              const crackleOsc = ctx.createOscillator();
-              crackleOsc.type = 'sawtooth';
-              crackleOsc.frequency.setValueAtTime(Math.random() * 1800 + 1200, now);
-              crackleOsc.frequency.exponentialRampToValueAtTime(180, now + 0.025);
-
-              const crackleGain = ctx.createGain();
-              crackleGain.gain.setValueAtTime(Math.random() * 0.45 + 0.1, now);
-              crackleGain.gain.exponentialRampToValueAtTime(0.001, now + 0.025);
-
-              crackleOsc.connect(crackleGain);
-              crackleGain.connect(mainGain);
-
-              crackleOsc.start(now);
-              crackleOsc.stop(now + 0.03);
-            } catch(e) {}
-            scheduleCrackles();
-          }, interval);
-        }
-        scheduleCrackles();
-
-        return () => {
-          if (fireTimer) clearTimeout(fireTimer);
-          try { droneSrc.stop(); droneSrc.disconnect(); } catch(e) {}
-        };
-      },
-
-      'ocean': (ctx, mainGain) => {
-        const pinkBuf = getNoiseBuffer('pink');
-        const src = createLoopSource(ctx, pinkBuf);
-
-        const filter = ctx.createBiquadFilter();
-        filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(450, ctx.currentTime);
-        filter.Q.setValueAtTime(1.5, ctx.currentTime);
-
-        // 11.5s slow rolling ocean tidal wave LFO
-        const waveLfo = ctx.createOscillator();
-        waveLfo.frequency.setValueAtTime(0.087, ctx.currentTime);
-        
-        const filterLfoGain = ctx.createGain();
-        filterLfoGain.gain.setValueAtTime(320, ctx.currentTime);
-        waveLfo.connect(filterLfoGain);
-        filterLfoGain.connect(filter.frequency);
-
-        const subGain = ctx.createGain();
-        subGain.gain.setValueAtTime(0.55, ctx.currentTime);
-
-        const ampLfoGain = ctx.createGain();
-        ampLfoGain.gain.setValueAtTime(0.28, ctx.currentTime);
-        waveLfo.connect(ampLfoGain);
-        ampLfoGain.connect(subGain.gain);
-
-        src.connect(filter);
-        filter.connect(subGain);
-        subGain.connect(mainGain);
-
-        src.start();
-        waveLfo.start();
-
-        return () => {
-          try {
-            src.stop(); waveLfo.stop();
-            src.disconnect();
-          } catch(e) {}
-        };
-      },
-
-      'crickets': (ctx, mainGain) => {
-        // Dual high-pitch insect tones
-        const osc1 = ctx.createOscillator();
-        osc1.type = 'sine';
-        osc1.frequency.setValueAtTime(4450, ctx.currentTime);
-
-        const osc2 = ctx.createOscillator();
-        osc2.type = 'sine';
-        osc2.frequency.setValueAtTime(4850, ctx.currentTime);
-
-        // 22Hz rapid tremolo pulse
-        const tremolo = ctx.createOscillator();
-        tremolo.type = 'sawtooth';
-        tremolo.frequency.setValueAtTime(22, ctx.currentTime);
-
-        const tremoloGain = ctx.createGain();
-        tremoloGain.gain.setValueAtTime(0.35, ctx.currentTime);
-
-        const chirpGain = ctx.createGain();
-        chirpGain.gain.setValueAtTime(0.3, ctx.currentTime);
-
-        tremolo.connect(tremoloGain);
-        tremoloGain.connect(chirpGain.gain);
-
-        osc1.connect(chirpGain);
-        osc2.connect(chirpGain);
-        chirpGain.connect(mainGain);
-
-        osc1.start();
-        osc2.start();
-        tremolo.start();
-
-        return () => {
-          try {
-            osc1.stop(); osc2.stop(); tremolo.stop();
-            osc1.disconnect(); osc2.disconnect();
-          } catch(e) {}
-        };
-      },
-
-      'brown-noise': (ctx, mainGain) => {
-        const brownBuf = getNoiseBuffer('brown');
-        const src = createLoopSource(ctx, brownBuf);
-
-        const filter = ctx.createBiquadFilter();
-        filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(260, ctx.currentTime);
-        filter.Q.setValueAtTime(1.0, ctx.currentTime);
-
-        const subGain = ctx.createGain();
-        subGain.gain.setValueAtTime(0.85, ctx.currentTime);
-
-        src.connect(filter);
-        filter.connect(subGain);
-        subGain.connect(mainGain);
-        src.start();
-
-        return () => {
-          try {
-            src.stop(); src.disconnect();
-          } catch(e) {}
-        };
-      }
-    };
-
-    function playTimerChime() {
-      const ctx = initAudioContext();
-      if (!ctx) return;
-      try {
-        const now = ctx.currentTime;
-        const chimeNotes = [523.25, 659.25, 783.99]; // C5, E5, G5
-        chimeNotes.forEach((freq, idx) => {
-          const t = now + (idx * 0.16);
-          const osc = ctx.createOscillator();
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(freq, t);
-
-          const gain = ctx.createGain();
-          gain.gain.setValueAtTime(0.001, t);
-          gain.gain.linearRampToValueAtTime(0.4, t + 0.02);
-          gain.gain.exponentialRampToValueAtTime(0.0001, t + 1.8);
-
-          osc.connect(gain);
-          gain.connect(ctx.destination);
-          osc.start(t);
-          osc.stop(t + 1.9);
-        });
-      } catch(e) {}
-    }
 
     function setMasterVolume(val) {
       const numVal = parseFloat(val);
@@ -4685,11 +3850,8 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
         const channel = state.audioChannels[key];
         if (channel && channel.active) {
           const effectiveVol = Math.max(0, Math.min(1, channel.vol * state.masterVolume));
-          if (channel.gainNode && audioCtx) {
-            channel.gainNode.gain.setValueAtTime(effectiveVol, audioCtx.currentTime);
-          }
-          if (channel.customAudio) {
-            channel.customAudio.volume = effectiveVol;
+          if (channel.audio) {
+            channel.audio.volume = effectiveVol;
           }
         }
       });
@@ -4711,14 +3873,15 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
         }
         if (badge) {
           badge.classList.remove('hidden');
+          badge.classList.add('inline-flex');
         }
         if (card) {
-          card.classList.add('border-[#C48351]/80', 'bg-[#0E172A]', 'shadow-[#C48351]/15');
           card.classList.remove('border-[#B87333]/25', 'bg-[#0B1120]/90');
+          card.classList.add('border-[#C48351]/60', 'bg-[#0F172A]', 'shadow-[0_0_25px_rgba(196,131,81,0.15)]');
         }
         if (iconBox) {
-          iconBox.classList.add('bg-[#C48351]/25', 'border-[#C48351]/60', 'scale-105');
           iconBox.classList.remove('bg-[#111827]', 'border-[#B87333]/30');
+          iconBox.classList.add('bg-[#C48351]/25', 'border-[#C48351]/60', 'scale-105');
         }
       } else {
         if (btn) {
@@ -4729,9 +3892,10 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
         }
         if (badge) {
           badge.classList.add('hidden');
+          badge.classList.remove('inline-flex');
         }
         if (card) {
-          card.classList.remove('border-[#C48351]/80', 'bg-[#0E172A]', 'shadow-[#C48351]/15');
+          card.classList.remove('border-[#C48351]/60', 'bg-[#0F172A]', 'shadow-[0_0_25px_rgba(196,131,81,0.15)]');
           card.classList.add('border-[#B87333]/25', 'bg-[#0B1120]/90');
         }
         if (iconBox) {
@@ -4746,51 +3910,25 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
       const channel = state.audioChannels[channelKey];
       if (!channel) return;
 
-      const ctx = initAudioContext();
-
       if (channel.active) {
-        // Gracefully stop active sound
-        if (channel.gainNode && ctx) {
-          try {
-            channel.gainNode.gain.setValueAtTime(channel.gainNode.gain.value, ctx.currentTime);
-            channel.gainNode.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.08);
-          } catch(e) {}
+        if (channel.audio) {
+          channel.audio.pause();
         }
-        setTimeout(() => {
-          if (channel.cleanup) {
-            try { channel.cleanup(); } catch(e) {}
-            channel.cleanup = null;
-          }
-          channel.active = false;
-          updateSoundUI(channelKey, false);
-        }, 90);
+        channel.active = false;
+        updateSoundUI(channelKey, false);
       } else {
-        // Start sound channel
-        try {
-          if (channel.cleanup) {
-            try { channel.cleanup(); } catch(e) {}
-            channel.cleanup = null;
-          }
-
-          const effectiveVol = Math.max(0, Math.min(1, channel.vol * (state.masterVolume !== undefined ? state.masterVolume : 0.8)));
-
-          const synthFn = soundSynthesizers[channelKey];
-          if (!synthFn || !ctx) return;
-
-          if (!channel.gainNode) {
-            channel.gainNode = ctx.createGain();
-            channel.gainNode.connect(ctx.destination);
-          }
-
-          channel.gainNode.gain.setValueAtTime(0.001, ctx.currentTime);
-          channel.gainNode.gain.linearRampToValueAtTime(effectiveVol, ctx.currentTime + 0.1);
-
-          channel.cleanup = synthFn(ctx, channel.gainNode);
-          channel.active = true;
-          updateSoundUI(channelKey, true);
-        } catch (err) {
-          console.error(`Error starting synthesizer channel ${channelKey}:`, err);
+        if (!channel.audio) {
+          channel.audio = new Audio(channel.url);
+          channel.audio.loop = true;
+          channel.audio.preload = "none";
+          channel.audio.crossOrigin = "anonymous";
         }
+        const effectiveVol = Math.max(0, Math.min(1, channel.vol * (state.masterVolume !== undefined ? state.masterVolume : 0.8)));
+        channel.audio.volume = effectiveVol;
+
+        channel.audio.play().catch(e => console.warn(`Error playing ${channelKey}:`, e));
+        channel.active = true;
+        updateSoundUI(channelKey, true);
       }
     }
 
@@ -4803,8 +3941,8 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
       if (textEl) textEl.innerText = `${Math.round(numVal * 100)}%`;
 
       const effectiveVol = Math.max(0, Math.min(1, numVal * (state.masterVolume !== undefined ? state.masterVolume : 0.8)));
-      if (channel.gainNode && audioCtx) {
-        channel.gainNode.gain.setValueAtTime(effectiveVol, audioCtx.currentTime);
+      if (channel.audio) {
+        channel.audio.volume = effectiveVol;
       }
     }
 
@@ -4813,35 +3951,34 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
 
       setTimeout(() => {
         if (preset === 'storm') {
-          toggleSound('rain-thunder');
+          toggleSound('rain');
           toggleSound('wind');
-          toggleSound('rain-roof');
+          toggleSound('roof');
         } else if (preset === 'monsoon') {
-          toggleSound('rain-thunder');
-          toggleSound('rain-roof');
+          toggleSound('rain');
+          toggleSound('roof');
           toggleSound('wind');
         } else if (preset === 'tinroof') {
-          toggleSound('rain-roof');
-          toggleSound('waterfall');
-          toggleSound('fireplace');
+          toggleSound('roof');
+          toggleSound('stream');
+          toggleSound('fire');
         } else if (preset === 'coastal') {
           toggleSound('ocean');
           toggleSound('wind');
           toggleSound('birds');
         } else if (preset === 'zen') {
-          toggleSound('piano');
-          toggleSound('waterfall');
+          toggleSound('stream');
           toggleSound('crickets');
+          toggleSound('birds');
         } else if (preset === 'cozy') {
-          toggleSound('fireplace');
-          toggleSound('rain-roof');
+          toggleSound('fire');
+          toggleSound('roof');
           toggleSound('wind');
         } else if (preset === 'adhd') {
-          toggleSound('brown-noise');
-          toggleSound('waterfall');
-          toggleSound('rain-thunder');
+          toggleSound('wind');
+          toggleSound('stream');
+          toggleSound('rain');
         } else if (preset === 'sleep') {
-          toggleSound('brown-noise');
           toggleSound('ocean');
           toggleSound('crickets');
           toggleSound('wind');
@@ -4880,9 +4017,8 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
       Object.keys(state.audioChannels).forEach(key => {
         const channel = state.audioChannels[key];
         if (channel && channel.active) {
-          if (channel.cleanup) {
-            try { channel.cleanup(); } catch(e) {}
-            channel.cleanup = null;
+          if (channel.audio) {
+            channel.audio.pause();
           }
           channel.active = false;
           updateSoundUI(key, false);
@@ -4890,7 +4026,6 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
       });
       showToast('All soundscapes stopped', 'square');
     }
-
 
     // ===================================================================
     // TAB 2: TEXT CLEANER
