@@ -3481,15 +3481,6 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
   <!-- ================================================================= -->
   <script>
 
-const TRACKS = [
-      { id: "rain", title: "Heavy Rain & Thunder", icon: "⛈️", desc: "Deep rolling thunder & rain", url: "https://actions.google.com/sounds/v1/weather/rain_heavy.ogg" },
-      { id: "birds", title: "Forest Birds Chorus", icon: "🐦", desc: "Woodland morning bird chirping", url: "https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonanza.ogg" },
-      { id: "wind", title: "Soft Night Wind", icon: "💨", desc: "Gentle natural nighttime breeze", url: "https://actions.google.com/sounds/v1/weather/wind_breeze.ogg" },
-      { id: "stream", title: "Flowing Mountain Stream", icon: "🌊", desc: "Crisp natural stream cascade", url: "https://actions.google.com/sounds/v1/water/creek_water_flow.ogg" },
-      { id: "fire", title: "Cozy Fireplace", icon: "🔥", desc: "Crackling wood & warm fire pops", url: "https://actions.google.com/sounds/v1/household/fireplace_crackling.ogg" },
-      { id: "ocean", title: "Ocean Surf Waves", icon: "🏖️", desc: "Rhythmic waves on shore", url: "https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" },
-      { id: "crickets", title: "Midnight Crickets", icon: "🦗", desc: "Steady night insect chorus", url: "https://actions.google.com/sounds/v1/ambiences/meadow_night_ambience.ogg" }
-    ];
 // APP STATE
     const state = {
       currentTab: 'focus',
@@ -3506,14 +3497,14 @@ const TRACKS = [
       },
       masterVolume: 0.8,
       audioChannels: {
-        'rain': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/weather/rain_heavy.ogg" },
+        'rain': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/4/47/Rain_on_window.ogg" },
         'roof': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rain_on_a_tin_roof.ogg" },
-        'birds': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonanza.ogg" },
-        'wind': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/weather/wind_breeze.ogg" },
-        'stream': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/water/creek_water_flow.ogg" },
-        'fire': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/household/fireplace_crackling.ogg" },
-        'ocean': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" },
-        'crickets': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/ambiences/meadow_night_ambience.ogg" }
+        'birds': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Birds_singing_in_a_forest.ogg" },
+        'wind': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Wind-in-trees.ogg" },
+        'stream': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/3/30/Brook_at_the_mountain_-_stream.ogg" },
+        'fire': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Crackling_fireplace.ogg" },
+        'ocean': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/4/42/Ocean_waves_on_the_beach.ogg" },
+        'crickets': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/5/52/Cicada.ogg" }
       },
 
       // Color Palette
