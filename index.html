@@ -499,6 +499,10 @@
             <input id="master-vol-slider" type="range" min="0" max="1" step="0.01" value="0.8" oninput="setMasterVolume(this.value)" class="w-28 sm:w-36 accent-[#C87D55] h-2 bg-[#111E38] rounded-lg appearance-none cursor-pointer border border-[#C87D55]/20">
             <span id="master-vol-text" class="text-xs font-mono text-[#F2D5C4] w-9 text-right font-bold">80%</span>
           </div>
+                    <button onclick="stopAllSounds()" class="py-2 px-4 text-xs font-bold text-rose-300 hover:text-white bg-rose-500/15 hover:bg-rose-500/25 border border-rose-500/30 hover:border-rose-500/50 rounded-xl transition flex items-center justify-center gap-2 shadow-md">
+            <i data-lucide="square" class="w-4 h-4 fill-current"></i>
+            <span>Stop All Sounds</span>
+          </button>
         </div>
 
         <!-- 2-COLUMN RESPONSIVE SOUND CONTROLS GRID (grid-cols-1 md:grid-cols-2) -->
@@ -516,7 +520,7 @@
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Heavy Rain & Thunder</span>
                     <span id="badge-status-rain" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Deep rolling thunder with pouring rain</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Deep rolling thunder & rain</p>
                 </div>
               </div>
               <button onclick="toggleSound('rain')" id="btn-sound-rain" title="Toggle Heavy Rain & Thunder" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
@@ -528,8 +532,8 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-rain" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('rain', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-rain" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-rain" type="range" min="0" max="100" step="1" value="70" oninput="setSoundVolume('rain', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-rain" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">70%</span>
             </div>
           </div>
 
@@ -557,8 +561,8 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-roof" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('roof', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-roof" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-roof" type="range" min="0" max="100" step="1" value="70" oninput="setSoundVolume('roof', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-roof" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">70%</span>
             </div>
           </div>
 
@@ -574,7 +578,7 @@
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Forest Birds Chorus</span>
                     <span id="badge-status-birds" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Authentic woodland morning bird chirping</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Woodland morning bird chirping</p>
                 </div>
               </div>
               <button onclick="toggleSound('birds')" id="btn-sound-birds" title="Toggle Forest Birds Chorus" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
@@ -586,8 +590,8 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-birds" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('birds', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-birds" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-birds" type="range" min="0" max="100" step="1" value="70" oninput="setSoundVolume('birds', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-birds" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">70%</span>
             </div>
           </div>
 
@@ -615,12 +619,12 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-wind" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('wind', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-wind" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-wind" type="range" min="0" max="100" step="1" value="70" oninput="setSoundVolume('wind', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-wind" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">70%</span>
             </div>
           </div>
 
-          <!-- SOUND: Flowing Waterfall & Stream -->
+          <!-- SOUND: Flowing Mountain Stream -->
           <div id="card-sound-stream" class="sound-card relative bg-[#0B1120]/90 backdrop-blur-md border border-[#B87333]/25 hover:border-[#C48351]/60 rounded-2xl p-4 sm:p-5 space-y-3.5 transition-all duration-300 shadow-xl group">
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-3">
@@ -629,13 +633,13 @@
                 </div>
                 <div>
                   <div class="flex items-center gap-2">
-                    <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Flowing Waterfall & Stream</span>
+                    <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Flowing Mountain Stream</span>
                     <span id="badge-status-stream" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Natural mountain stream water current</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Crisp natural stream cascade</p>
                 </div>
               </div>
-              <button onclick="toggleSound('stream')" id="btn-sound-stream" title="Toggle Flowing Waterfall & Stream" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
+              <button onclick="toggleSound('stream')" id="btn-sound-stream" title="Toggle Flowing Mountain Stream" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
                 <i id="btn-icon-stream" data-lucide="play" class="w-4 h-4"></i>
               </button>
             </div>
@@ -644,8 +648,8 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-stream" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('stream', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-stream" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-stream" type="range" min="0" max="100" step="1" value="70" oninput="setSoundVolume('stream', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-stream" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">70%</span>
             </div>
           </div>
 
@@ -661,7 +665,7 @@
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Cozy Fireplace</span>
                     <span id="badge-status-fire" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Natural wood crackling and warm ember pops</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Crackling wood & warm fire pops</p>
                 </div>
               </div>
               <button onclick="toggleSound('fire')" id="btn-sound-fire" title="Toggle Cozy Fireplace" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
@@ -673,8 +677,8 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-fire" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('fire', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-fire" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-fire" type="range" min="0" max="100" step="1" value="70" oninput="setSoundVolume('fire', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-fire" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">70%</span>
             </div>
           </div>
 
@@ -690,7 +694,7 @@
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Ocean Surf Waves</span>
                     <span id="badge-status-ocean" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Rhythmic coastal waves on shore</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Rhythmic waves on shore</p>
                 </div>
               </div>
               <button onclick="toggleSound('ocean')" id="btn-sound-ocean" title="Toggle Ocean Surf Waves" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
@@ -702,8 +706,8 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-ocean" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('ocean', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-ocean" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-ocean" type="range" min="0" max="100" step="1" value="70" oninput="setSoundVolume('ocean', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-ocean" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">70%</span>
             </div>
           </div>
 
@@ -719,7 +723,7 @@
                     <span class="text-xs sm:text-sm font-bold text-white tracking-tight">Midnight Crickets</span>
                     <span id="badge-status-crickets" class="hidden px-2 py-0.5 rounded-full text-[9px] font-mono font-medium bg-[#C48351]/25 text-[#F2D5C4] border border-[#C48351]/40 animate-pulse">PLAYING</span>
                   </div>
-                  <p class="text-[11px] text-gray-400 font-sans">Steady summer night cricket chorus</p>
+                  <p class="text-[11px] text-gray-400 font-sans">Steady night insect chorus</p>
                 </div>
               </div>
               <button onclick="toggleSound('crickets')" id="btn-sound-crickets" title="Toggle Midnight Crickets" class="w-10 h-10 rounded-xl bg-[#111827] hover:bg-[#1F2937] text-gray-300 hover:text-white border border-[#B87333]/30 flex items-center justify-center transition-all duration-300 shadow-md">
@@ -731,8 +735,8 @@
                 <i data-lucide="volume-2" class="w-3 h-3 text-[#C48351]"></i>
                 <span>Vol</span>
               </span>
-              <input id="vol-sound-crickets" type="range" min="0" max="1" step="0.01" value="0.65" oninput="setSoundVolume('crickets', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
-              <span id="vol-text-crickets" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">65%</span>
+              <input id="vol-sound-crickets" type="range" min="0" max="100" step="1" value="70" oninput="setSoundVolume('crickets', this.value)" class="flex-1 accent-[#C48351] h-2 bg-[#040810] rounded-lg appearance-none cursor-pointer border border-[#B87333]/25">
+              <span id="vol-text-crickets" class="text-[10px] font-mono text-[#F2D5C4] w-8 text-right font-medium">70%</span>
             </div>
           </div>
         </div>
@@ -3477,15 +3481,14 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
   <!-- ================================================================= -->
   <script>
 
-    const AMBIENT_SOUNDS = [
-      { id: "rain", title: "Heavy Rain & Thunder", icon: "⛈️", desc: "Deep rolling thunder with pouring rain", url: "https://actions.google.com/sounds/v1/weather/rain_heavy.ogg" },
-      { id: "roof", title: "Rain on Tin Roof", icon: "🏠", desc: "Crisp water drops pattering on metal surface", url: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rain_on_a_tin_roof.ogg" },
-      { id: "birds", title: "Forest Birds Chorus", icon: "🐦", desc: "Authentic woodland morning bird chirping", url: "https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonanza.ogg" },
+const TRACKS = [
+      { id: "rain", title: "Heavy Rain & Thunder", icon: "⛈️", desc: "Deep rolling thunder & rain", url: "https://actions.google.com/sounds/v1/weather/rain_heavy.ogg" },
+      { id: "birds", title: "Forest Birds Chorus", icon: "🐦", desc: "Woodland morning bird chirping", url: "https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonanza.ogg" },
       { id: "wind", title: "Soft Night Wind", icon: "💨", desc: "Gentle natural nighttime breeze", url: "https://actions.google.com/sounds/v1/weather/wind_breeze.ogg" },
-      { id: "stream", title: "Flowing Waterfall & Stream", icon: "🌊", desc: "Natural mountain stream water current", url: "https://actions.google.com/sounds/v1/water/creek_water_flow.ogg" },
-      { id: "fire", title: "Cozy Fireplace", icon: "🔥", desc: "Natural wood crackling and warm ember pops", url: "https://actions.google.com/sounds/v1/household/fireplace_crackling.ogg" },
-      { id: "ocean", title: "Ocean Surf Waves", icon: "🏖️", desc: "Rhythmic coastal waves on shore", url: "https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" },
-      { id: "crickets", title: "Midnight Crickets", icon: "🦗", desc: "Steady summer night cricket chorus", url: "https://actions.google.com/sounds/v1/ambiences/meadow_night_ambience.ogg" }
+      { id: "stream", title: "Flowing Mountain Stream", icon: "🌊", desc: "Crisp natural stream cascade", url: "https://actions.google.com/sounds/v1/water/creek_water_flow.ogg" },
+      { id: "fire", title: "Cozy Fireplace", icon: "🔥", desc: "Crackling wood & warm fire pops", url: "https://actions.google.com/sounds/v1/household/fireplace_crackling.ogg" },
+      { id: "ocean", title: "Ocean Surf Waves", icon: "🏖️", desc: "Rhythmic waves on shore", url: "https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" },
+      { id: "crickets", title: "Midnight Crickets", icon: "🦗", desc: "Steady night insect chorus", url: "https://actions.google.com/sounds/v1/ambiences/meadow_night_ambience.ogg" }
     ];
 // APP STATE
     const state = {
@@ -3503,14 +3506,14 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
       },
       masterVolume: 0.8,
       audioChannels: {
-        'rain': { active: false, audio: null, vol: 0.65, url: "https://actions.google.com/sounds/v1/weather/rain_heavy.ogg" },
-        'roof': { active: false, audio: null, vol: 0.60, url: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rain_on_a_tin_roof.ogg" },
-        'birds': { active: false, audio: null, vol: 0.55, url: "https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonanza.ogg" },
-        'wind': { active: false, audio: null, vol: 0.60, url: "https://actions.google.com/sounds/v1/weather/wind_breeze.ogg" },
-        'stream': { active: false, audio: null, vol: 0.55, url: "https://actions.google.com/sounds/v1/water/creek_water_flow.ogg" },
-        'fire': { active: false, audio: null, vol: 0.60, url: "https://actions.google.com/sounds/v1/household/fireplace_crackling.ogg" },
-        'ocean': { active: false, audio: null, vol: 0.65, url: "https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" },
-        'crickets': { active: false, audio: null, vol: 0.50, url: "https://actions.google.com/sounds/v1/ambiences/meadow_night_ambience.ogg" }
+        'rain': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/weather/rain_heavy.ogg" },
+        'roof': { active: false, audio: null, vol: 0.70, url: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Rain_on_a_tin_roof.ogg" },
+        'birds': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonanza.ogg" },
+        'wind': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/weather/wind_breeze.ogg" },
+        'stream': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/water/creek_water_flow.ogg" },
+        'fire': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/household/fireplace_crackling.ogg" },
+        'ocean': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg" },
+        'crickets': { active: false, audio: null, vol: 0.70, url: "https://actions.google.com/sounds/v1/ambiences/meadow_night_ambience.ogg" }
       },
 
       // Color Palette
@@ -3833,6 +3836,13 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
       showToast('Timer Reset', 'rotate-ccw');
     }
 
+
+    function playTimerChime() {
+      const audio = new Audio("https://actions.google.com/sounds/v1/alarms/beep_short.ogg");
+      audio.volume = state.masterVolume !== undefined ? state.masterVolume : 0.8;
+      audio.play().catch(e => console.warn("Timer chime play failed", e));
+    }
+
     function skipTimerMode() {
       if (state.timer.mode === 'work') setTimerMode('short');
       else setTimerMode('work');
@@ -3920,13 +3930,13 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
         if (!channel.audio) {
           channel.audio = new Audio(channel.url);
           channel.audio.loop = true;
-          channel.audio.preload = "none";
+          channel.audio.preload = "auto";
           channel.audio.crossOrigin = "anonymous";
         }
         const effectiveVol = Math.max(0, Math.min(1, channel.vol * (state.masterVolume !== undefined ? state.masterVolume : 0.8)));
         channel.audio.volume = effectiveVol;
 
-        channel.audio.play().catch(e => console.warn(`Error playing ${channelKey}:`, e));
+        channel.audio.play().catch(err => console.error("Audio playback error:", err));
         channel.active = true;
         updateSoundUI(channelKey, true);
       }
@@ -3935,7 +3945,7 @@ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/200
     function setSoundVolume(channelKey, val) {
       const channel = state.audioChannels[channelKey];
       if (!channel) return;
-      const numVal = parseFloat(val);
+      const numVal = parseFloat(val) / 100;
       channel.vol = numVal;
       const textEl = document.getElementById(`vol-text-${channelKey}`);
       if (textEl) textEl.innerText = `${Math.round(numVal * 100)}%`;
